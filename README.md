@@ -43,6 +43,4 @@ Adds:
   `copy`, `remove_if`, `stable_partition`, `find`, etc.
 - Makefile and CMake build support
 
-Each version has its own branch and README.
-
 
