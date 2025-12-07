@@ -1,14 +1,21 @@
-# Student Grade Calculator
+# Release v0.25 — List and Deque Performance Comparison
 
-This application calculates final grades for students based on homework results and the exam.
+This version extends v0.2 by adding alternative STL container support.
 
-Basic student points calculation formula:
+### Containers used:
+- `std::vector`
+- `std::list`
+- `std::deque`
 
-Final = 0.4 * Homework + 0.6 * Exam
+### Features:
+- Reads generated student files (1k–10M records).
+- Splits students into passed/failed.
+- Sorts containers by name + surname.
+- Measures timing for all operations:
+  - reading
+  - splitting
+  - sorting
+  - writing
+- Produces output files for each container type.
 
-The program can:
-- Read students from keyboard
-- Generate random students
-- Read students from Students.txt file
-- Calculate final grades using average and median of homework results
-- Sort students by surname and print a formatted table
+Large generated files remain excluded from GitHub.
