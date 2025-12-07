@@ -1,14 +1,12 @@
-# Student Grade Calculator
+# Release v0.1 — Basic Student Calculator
 
-This application calculates final grades for students based on homework results and the exam.
+This version introduces the simplest student grade calculator.
 
-Basic student points calculation formula:
+### Features:
+- Reads user input manually.
+- Stores one student's data.
+- Calculates final grade using homework and exam.
+- Supports average or median calculation.
+- Outputs results in a formatted table.
 
-Final = 0.4 * Homework + 0.6 * Exam
-
-The program can:
-- Read students from keyboard
-- Generate random students
-- Read students from Students.txt file
-- Calculate final grades using average and median of homework results
-- Sort students by surname and print a formatted table
+### No files, containers, or advanced features are used in this version.
