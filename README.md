@@ -1,14 +1,51 @@
-# Student Grade Calculator
+# Student Grade Processing System
 
-This application calculates final grades for students based on homework results and the exam.
+This project implements a multi-stage student grade processing system developed across several releases.  
+Each release improves structure, performance, and algorithmic efficiency while introducing new features and container types.
 
-Basic student points calculation formula:
+The program reads student data, calculates final grades, splits students based on performance, sorts results, and writes them to output files.  
+It also includes performance comparisons between different STL containers and data-splitting strategies.
 
-Final = 0.4 * Homework + 0.6 * Exam
+---
 
-The program can:
-- Read students from keyboard
-- Generate random students
-- Read students from Students.txt file
-- Calculate final grades using average and median of homework results
-- Sort students by surname and print a formatted table
+# 📌 Project Overview
+
+The system evolves through multiple versions:
+
+### ✔ v0.1 — Basic calculator
+Simple console program:
+- Reads student input
+- Calculates final grade (average/median)
+- Prints formatted table
+
+### ✔ v0.2 — File processing & exceptions
+Adds:
+- `Person` class
+- Reading from files
+- Sorting and splitting students
+- Generating large datasets (1k–10M)
+- Execution time measurement
+- Exception handling
+
+### ✔ v0.25 — Container performance comparison
+Implements:
+- `vector`
+- `list`
+- `deque`
+- Timing of read/split/sort/write operations
+
+### ✔ v1.0 — Final optimized version
+Adds:
+- Two data-splitting strategies:
+  - Strategy 1 (copy)
+  - Strategy 2 (move + erase)
+- Performance optimization using `<algorithm>`:
+  `copy`, `remove_if`, `stable_partition`, `find`, etc.
+- Makefile and CMake build support
+
+Each version has its own branch and README.
+
+---
+
+# 🧱 Project Structure
+
