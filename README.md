@@ -45,7 +45,4 @@ Adds:
 
 Each version has its own branch and README.
 
----
-
-# 🧱 Project Structure
 
