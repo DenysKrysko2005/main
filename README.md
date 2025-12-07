@@ -1,14 +1,22 @@
-# Student Grade Calculator
+# Release v0.2 — File Input, Splitting, Sorting, Exceptions
 
-This application calculates final grades for students based on homework results and the exam.
+This version adds file processing, containers, and error handling.
 
-Basic student points calculation formula:
+### Added features:
+- `Person` class with constructors and rule of three.
+- Reads students from *Students.txt*.
+- Automatically calculates final grades.
+- Splits students into:
+  - **failed** (<5.0)
+  - **passed** (>=5.0)
+- Outputs formatted tables.
+- Supports dynamic homework count using vectors.
+- Generates large datasets (1k–10M students).
+- Measures execution time for:
+  - reading
+  - sorting
+  - splitting
+  - writing
+- Implements basic exception handling.
 
-Final = 0.4 * Homework + 0.6 * Exam
-
-The program can:
-- Read students from keyboard
-- Generate random students
-- Read students from Students.txt file
-- Calculate final grades using average and median of homework results
-- Sort students by surname and print a formatted table
+Large files are not included in the repository.
